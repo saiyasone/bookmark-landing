@@ -7,14 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bookmark-landing';
-
-  activeTab = 'first';
-
-  setActiveTab(str: string) {
-    if (this.activeTab.includes(str)) {
-      return;
-    }
-
-    this.activeTab = str;
-  }
 }

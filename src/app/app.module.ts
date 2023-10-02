@@ -9,6 +9,9 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TabListComponent } from './components/tab-list/tab-list.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FaqComponent } from './components/faq/faq.component';
+import { ExtensionComponent } from './components/extension/extension.component';
+import { FeatureComponent } from './components/feature/feature.component';
+import { HeroComponent } from './components/hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { FaqComponent } from './components/faq/faq.component';
     TabListComponent,
     FooterComponent,
     FaqComponent,
+    ExtensionComponent,
+    FeatureComponent,
+    HeroComponent,
   ],
   imports: [BrowserModule, CommonModule, FormsModule, ReactiveFormsModule],
   providers: [],

@@ -4,154 +4,15 @@
 
 <main>
   <section class="section-hero">
-    <div class="grid">
-      <div class="hero-left">
-        <div class="hero-text">
-          <h2>A Simple Bookmark Manager</h2>
-          <p>
-            A clean and simple interface to organize your favourite websites.
-            Open a new browser tab and see your sites load instantly. Try it for
-            free.
-          </p>
-          <div class="hero-action">
-            <button class="btn-main btn-primary">Get it on Chrome</button>
-            <button class="btn-main btn-light">Get it on Firefox</button>
-          </div>
-        </div>
-      </div>
-      <div class="hero-img grid-reverse">
-        <div class="img-wrapper img-wrapper-left">
-          <img
-            class="img-bg-right"
-            src="../assets/images/illustration-hero.svg"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
+    <app-hero></app-hero>
   </section>
 
   <section class="section-feature">
-    <div class="feature-text">
-      <h2>Features</h2>
-      <p>
-        Our aim is to make it quick and easy for you to access your favourite
-        websites. Your bookmarks sync between your devices so you can access
-        them on the go.
-      </p>
-    </div>
-    <ul class="feature-list">
-      <li class="feature-item">
-        <button
-          [ngClass]="{ active: activeTab === 'first' }"
-          (click)="setActiveTab('first')"
-        >
-          simple bookmarking
-        </button>
-      </li>
-      <li class="feature-item">
-        <button
-          [ngClass]="{ active: activeTab === 'second' }"
-          (click)="setActiveTab('second')"
-        >
-          speedy searching
-        </button>
-      </li>
-      <li class="feature-item">
-        <button
-          [ngClass]="{ active: activeTab === 'third' }"
-          (click)="setActiveTab('third')"
-        >
-          easy sharing
-        </button>
-      </li>
-    </ul>
-    <div class="feature-hero">
-      <ng-container *ngIf="activeTab === 'first'">
-        <app-tab-list
-          text="Bookmark in one click"
-          src="../assets/images/illustration-features-tab-1.svg"
-          desc="Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites."
-        ></app-tab-list>
-      </ng-container>
-      <ng-container *ngIf="activeTab === 'second'">
-        <app-tab-list
-          text="Speedy Searching"
-          src="../assets/images/illustration-features-tab-2.svg"
-          desc="Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks."
-        ></app-tab-list>
-      </ng-container>
-      <ng-container *ngIf="activeTab === 'third'">
-        <app-tab-list
-          text="Easy Sharing"
-          src="../assets/images/illustration-features-tab-3.svg"
-          desc="Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button."
-        ></app-tab-list>
-      </ng-container>
-    </div>
+    <app-feature></app-feature>
   </section>
 
   <section class="section-extension">
-    <div class="extension-text">
-      <h2>Download the extension</h2>
-      <p>
-        We've got more browsers in the pipeline. Please do let us know if you've
-        got a favourite you'd like us to prioritize.
-      </p>
-    </div>
-
-    <div class="extension-wrapper">
-      <div class="extension-list">
-        <div class="extension-card">
-          <div class="card-header">
-            <img src="../assets/images/logo-chrome.svg" alt="" />
-            <h2>Add to Chrome</h2>
-          </div>
-
-          <div class="extension-img">
-            <img src="../assets/images/bg-dots.svg" alt="" />
-          </div>
-
-          <div class="extension-action">
-            <button class="btn-main btn-primary">
-              add & install extension
-            </button>
-          </div>
-        </div>
-        <div class="extension-card card-second">
-          <div class="card-header">
-            <img src="../assets/images/logo-firefox.svg" alt="" />
-            <h2>Add to Firefox</h2>
-          </div>
-
-          <div class="extension-img">
-            <img src="../assets/images/bg-dots.svg" alt="" />
-          </div>
-
-          <div class="extension-action">
-            <button class="btn-main btn-primary">
-              add & install extension
-            </button>
-          </div>
-        </div>
-        <div class="extension-card card-third">
-          <div class="card-header">
-            <img src="../assets/images/logo-opera.svg" alt="" />
-            <h2>Add to Opera</h2>
-          </div>
-
-          <div class="extension-img">
-            <img src="../assets/images/bg-dots.svg" alt="" />
-          </div>
-
-          <div class="extension-action">
-            <button class="btn-main btn-primary">
-              add & install extension
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <app-extension></app-extension>
   </section>
 </main>
 

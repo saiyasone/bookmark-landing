@@ -1,0 +1,83 @@
+/* ========= Feature Text ========= */
+.feature-text {
+  max-width: 500px;
+  margin: 0 auto 3rem auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.feature-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #252d48;
+  margin-bottom: 1rem;
+}
+.feature-text p {
+  color: var(--link-color);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+@media (max-width: 560px) {
+  .feature-text {
+    padding: 0px 0px;
+  }
+}
+
+/* ========= Feature List ========= */
+.feature-list {
+  /* padding: 20px 0; */
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 870px) {
+  .feature-list {
+    flex-direction: column;
+  }
+}
+.feature-list .feature-item {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+@media (max-width: 870px) {
+  .feature-list .feature-item {
+    width: fit-content;
+  }
+}
+
+.feature-item button {
+  padding: 20px 30px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
+  color: #7f8084;
+  border-bottom: 3px solid transparent;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: 0.3s all ease;
+  min-width: 16rem;
+}
+@media (max-width: 870px) {
+  .feature-item button {
+    width: 100%;
+  }
+}
+@media (max-width: 560px) {
+  .feature-item button {
+    font-size: 1rem;
+  }
+}
+
+.feature-item button:hover {
+  color: var(--danger);
+}
+.feature-item button.active {
+  color: #444653;
+  border-bottom-color: var(--danger);
+}
+/* ========= Feature Hero ========= */
+.feature-hero {
+  margin: 30px 0;
+}

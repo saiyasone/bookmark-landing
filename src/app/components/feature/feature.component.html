@@ -1,0 +1,57 @@
+<div class="feature-text">
+  <h2>Features</h2>
+  <p>
+    Our aim is to make it quick and easy for you to access your favourite
+    websites. Your bookmarks sync between your devices so you can access them on
+    the go.
+  </p>
+</div>
+<ul class="feature-list">
+  <li class="feature-item">
+    <button
+      [ngClass]="{ active: activeTab === 'first' }"
+      (click)="setActiveTab('first')"
+    >
+      simple bookmarking
+    </button>
+  </li>
+  <li class="feature-item">
+    <button
+      [ngClass]="{ active: activeTab === 'second' }"
+      (click)="setActiveTab('second')"
+    >
+      speedy searching
+    </button>
+  </li>
+  <li class="feature-item">
+    <button
+      [ngClass]="{ active: activeTab === 'third' }"
+      (click)="setActiveTab('third')"
+    >
+      easy sharing
+    </button>
+  </li>
+</ul>
+<div class="feature-hero">
+  <ng-container *ngIf="activeTab === 'first'">
+    <app-tab-list
+      text="Bookmark in one click"
+      src="../assets/images/illustration-features-tab-1.svg"
+      desc="Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites."
+    ></app-tab-list>
+  </ng-container>
+  <ng-container *ngIf="activeTab === 'second'">
+    <app-tab-list
+      text="Speedy Searching"
+      src="../assets/images/illustration-features-tab-2.svg"
+      desc="Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks."
+    ></app-tab-list>
+  </ng-container>
+  <ng-container *ngIf="activeTab === 'third'">
+    <app-tab-list
+      text="Easy Sharing"
+      src="../assets/images/illustration-features-tab-3.svg"
+      desc="Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button."
+    ></app-tab-list>
+  </ng-container>
+</div>
