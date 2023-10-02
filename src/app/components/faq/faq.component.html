@@ -1,1 +1,37 @@
-<p>faq works!</p>
+<div class="faq-container">
+  <div class="faq-text">
+    <h2>Frequently Asked Questions</h2>
+    <p>
+      Here are some of our FAQs. If you have any other questions you'd like
+      answered please feel free to email us.
+    </p>
+  </div>
+
+  <div class="faq-questions">
+    <div class="question-container">
+      <ng-container *ngFor="let item of questions">
+        <div class="question-item">
+          <div (click)="setQuestion(item.id)" class="question-header">
+            <h4>
+              {{ item.title }}
+            </h4>
+            <div class="question-img">
+              <img
+                [ngClass]="{ active: item.active }"
+                src="../../../assets/images/icon-arrow.svg"
+              />
+            </div>
+          </div>
+
+          <ng-container *ngIf="item.active">
+            <div class="question-answer">
+              <p>
+                {{ item.answer }}
+              </p>
+            </div>
+          </ng-container>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

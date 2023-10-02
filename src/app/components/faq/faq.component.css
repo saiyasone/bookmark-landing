@@ -1,0 +1,98 @@
+@media screen and (min-width: 560px) {
+  .faq-container {
+    max-width: 560px;
+    padding: 0 1.5rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  .faq-container {
+    max-width: 980px;
+    padding: 0 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .faq-container {
+    max-width: 1200px;
+    padding: 0 3rem;
+  }
+}
+.faq-container {
+  margin: 0 auto;
+}
+.faq-container .faq-text {
+  text-align: center;
+  max-width: 36rem;
+  margin: 0 auto;
+}
+.faq-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
+}
+.faq-text p {
+  font-size: 1.2rem;
+  color: var(--link-color);
+  line-height: 1.5;
+}
+
+/* ========= Questions ========= */
+.faq-container .faq-questions {
+  margin-top: 3rem;
+}
+.faq-questions .question-container {
+  max-width: 36rem;
+  margin: 0 auto;
+}
+.question-container .question-item {
+  border-top: 1px solid #e3e4e7;
+}
+.question-item:last-child {
+  border-bottom: 1px solid #e3e4e7;
+}
+
+/* ========= Question Header ========= */
+.question-item .question-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 0;
+  cursor: pointer;
+}
+.question-header h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.3s all;
+}
+.question-item .question-header:hover {
+  color: var(--danger);
+}
+.question-header img {
+  width: 100%;
+  vertical-align: middle;
+  transition: 0.3s all;
+  pointer-events: none;
+}
+.question-header img.active {
+  transform: rotate(180deg);
+}
+@media (max-width: 650px) {
+  .question-header h4 {
+    font-size: 1rem;
+  }
+}
+
+/* ========= Question Answer ========= */
+.faq-container .question-answer {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+.question-answer p {
+  font-size: 1.1rem;
+  color: var(--link-color);
+  line-height: 1.6;
+}
+@media (max-width: 650px) {
+  .question-answer p {
+    font-size: 1rem;
+  }
+}
