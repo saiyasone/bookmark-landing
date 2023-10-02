@@ -1,0 +1,158 @@
+/* ======== Footer Top ======== */
+.footer-top {
+  padding: 4rem 0;
+}
+.footer-top .top-container {
+  max-width: 35rem;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+.top-container h4 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+.top-container h1 {
+  font-size: 2.5rem;
+}
+.top-container h4,
+.top-container h1 {
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 560px) {
+  .top-container h1{
+    font-size: 1.8rem;
+  }
+}
+
+.top-container .top-form {
+  margin-top: 2rem;
+}
+.top-form .form-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.form-wrapper .input-form {
+  flex-grow: 1;
+}
+.input-form input {
+  width: 100%;
+  outline: none;
+  border: 2px solid transparent;
+  height: 45px;
+  color: var(--link-color);
+  font-size: 0.85rem;
+  padding: 12px 18px;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: 0.3s all ease;
+  position: relative;
+}
+.input-form input.ng-invalid.ng-touched {
+  border-color: var(--danger);
+}
+.input-form .input-error {
+  padding: 6px;
+  background-color: var(--danger);
+  color: #fff;
+  border-radius: 0 0 8px 8px;
+  display: block;
+  font-size: 0.7rem;
+}
+
+.input-action button {
+  display: block;
+  height: 45px;
+}
+
+@media (max-width: 870px) {
+  .top-form .form-wrapper {
+    flex-direction: column;
+  }
+  .input-action button {
+    width: 100%;
+  }
+}
+
+/* ======== Footer Down ======== */
+.footer-down {
+  background-color: #252b46;
+}
+.footer-down .line-down {
+  width: 100%;
+  height: 1px;
+  background-color: #40455C;
+}
+.footer-down .nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 25px;
+}
+.nav-container nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  transition: 0.3s all ease;
+  text-transform: uppercase;
+}
+nav a:hover {
+  color: var(--danger);
+}
+.nav-container .action-social {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.action-social img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+@media (max-width: 870px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+
+  .nav-container .action-social {
+    margin-top: 2.5rem;
+  }
+}
+
+/* ======== Footer Down ======== */
+.footer-down .nav-bottom {
+  padding: 20px;
+}
+.nav-bottom p {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  color: var(--link-color);
+  text-align: center;
+}
+.nav-bottom p a {
+  color: #fff;
+}
+@media (max-width: 560px) {
+  .footer-down .nav-bottom {
+    padding: 1rem;
+  }
+  .nav-bottom p {
+    font-size: 0.8rem;
+  }
+}

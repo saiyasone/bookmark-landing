@@ -1,0 +1,39 @@
+<ng-container *ngIf="isToggle">
+  <app-sidebar [modal]="isToggle" (closeEmit)="setToggle()"></app-sidebar>
+</ng-container>
+<header>
+  <div class="header-container">
+    <nav>
+      <div class="nav-brand">
+        <div (click)="setToggle()" class="nav-logo">
+          <img
+            class="nav-mobile"
+            src="../../../assets/images/icon-hamburger.svg"
+            alt=""
+          />
+        </div>
+        <a href="#">
+          <img
+            class="nav-logo"
+            src="../../../assets/images/logo-bookmark.svg"
+            alt=""
+          />
+        </a>
+      </div>
+      <ul>
+        <li>
+          <a href="#">feature</a>
+        </li>
+        <li>
+          <a href="#">pricing</a>
+        </li>
+        <li>
+          <a href="#">contact</a>
+        </li>
+        <li>
+          <button class="btn-main btn-danger">login</button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

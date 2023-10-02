@@ -1,1 +1,122 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;600;700&family=Lexend+Exa:wght@300&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&family=Open+Sans&family=Outfit:wght@300;400&family=Overpass:wght@300;500&family=Poppins&family=Roboto:ital,wght@0,300;0,500;1,400&family=Rubik:wght@400;500&family=Ubuntu:wght@300&display=swap");
+
+:root {
+  --primary: #5466de;
+  --danger: #fb5859;
+  --white: #fff;
+  --link-color: #616068;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ========= Button ========= */
+.btn-main {
+  outline: none;
+  border: 2px solid;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 8px;
+  color: #fff;
+  transition: 0.3s all ease;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-danger {
+  background-color: var(--danger);
+  border-color: var(--danger);
+}
+.btn-light {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 12%);
+  background-color: #fff;
+  text-transform: inherit;
+  color: var(--link-color);
+  border: 2px solid transparent;
+}
+
+.btn-primary:hover {
+  color: var(--primary);
+}
+.btn-danger:hover {
+  color: var(--danger);
+}
+.btn-light:hover {
+  border-color: var(--link-color);
+}
+.btn-primary:hover,
+.btn-danger:hover {
+  background-color: #fff;
+}
+
+/* ========= Grid ========= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+@media (max-width: 870px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-reverse {
+    order: -1;
+  }
+}
+
+/* ========= Image Wrapper ========= */
+.img-wrapper {
+  width: 100%;
+  position: relative;
+}
+.img-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.img-wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  border-radius: 500px;
+  height: 74%;
+  width: 200%;
+  background-color: var(--primary);
+  top: 5rem;
+  bottom: 3%;
+}
+.img-wrapper-left::after {
+  left: 15%;
+}
+.img-wrapper-right::after {
+  right: 15%;
+}

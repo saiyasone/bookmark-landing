@@ -1,0 +1,80 @@
+<div class="footer-top">
+  <div class="top-container">
+    <h4>35,000+ ALREADY JOINED</h4>
+    <h1>Stay up-to-date with what we're doing</h1>
+
+    <div class="top-form">
+      <form [formGroup]="form">
+        <div class="form-wrapper">
+          <div class="input-form">
+            <input
+              formControlName="email"
+              type="email"
+              placeholder="Enter your email address"
+            />
+            <!-- *ngIf="f['email'].invalid && f['email'].touched" -->
+            <ng-container *ngIf="isRequired">
+              <span class="input-error">Can't blank </span>
+            </ng-container>
+
+            <!-- *ngIf="f['email'].errors?.['email']" -->
+            <ng-container *ngIf="isEmail">
+              <span class="input-error">Email is invalid</span>
+            </ng-container>
+          </div>
+          <div class="input-action">
+            <button
+              (click)="onSubmit()"
+              type="button"
+              class="btn-main btn-danger"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="footer-down">
+  <div class="nav-container">
+    <nav>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="../../../assets/images/logo-light-bookmark.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#"> features </a>
+        </li>
+        <li>
+          <a href="#"> pricing </a>
+        </li>
+        <li>
+          <a href="#"> contact </a>
+        </li>
+      </ul>
+
+      <div class="action-social">
+        <div class="social-icon">
+          <img src="../../../assets/images/icon-facebook.svg" alt="" />
+        </div>
+        <div class="social-icon">
+          <img src="../../../assets/images/icon-twitter.svg" alt="" />
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="line-down"></div>
+  <div class="nav-bottom">
+    <p>
+      Challenge By
+      <a href="https://www.frontendmentor.io/home"> Frontend Mentor.</a>
+      Coded by
+      <a href="https://www.frontendmentor.io/profile/saiyasone" target="_blank"
+        >Bob</a
+      >
+    </p>
+  </div>
+</div>
