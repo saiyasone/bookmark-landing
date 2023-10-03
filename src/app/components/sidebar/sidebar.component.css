@@ -1,20 +1,19 @@
 aside {
-  width: 0;
-  overflow: visible;
   position: fixed;
-  top: 0;
-  left: 0;
+  width: 0;
   height: 100vh;
-  z-index: 999;
+  overflow: hidden;
   background-color: #2f354f;
   transition: all 0.3s ease;
+  z-index: 999;
 }
 aside.toggle {
   width: 360px;
+  overflow: visible;
 }
 
 @media (max-width: 500px) {
-  aside {
+  aside.toggle {
     width: 100%;
   }
 }
