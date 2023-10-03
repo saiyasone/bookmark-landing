@@ -1,5 +1,6 @@
 aside {
-  width: 380px;
+  width: 0;
+  overflow: visible;
   position: fixed;
   top: 0;
   left: 0;
@@ -8,6 +9,10 @@ aside {
   background-color: #2f354f;
   transition: all 0.3s ease;
 }
+aside.toggle {
+  width: 360px;
+}
+
 @media (max-width: 500px) {
   aside {
     width: 100%;
